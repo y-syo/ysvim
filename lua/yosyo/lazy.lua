@@ -41,8 +41,8 @@ require('lazy').setup({
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 	{'elkowar/yuck.vim', lazy = true},
 	{ "Shatur/neovim-ayu", priority = 1000 },
+	{ "IogaMaster/neocord", event = "VeryLazy" },
 
 	-- 42 specific plugins
 	{'Diogo-ss/42-header.nvim', lazy = true},
-	{ 'hardyrafael17/norminette42.nvim', event = "VeryLazy", enabled = true, config = function() local norminette = require("norminette") norminette.setup({ runOnSave = true, maxErrorsToShow = 10, active = true, }) end },
 })
